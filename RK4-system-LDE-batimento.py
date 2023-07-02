@@ -64,7 +64,7 @@ def sis_osc_for ( y, t):
     b2 = 1.0    # coeficiente de amortecimento para o corpo 2
     p = 5.0   #máximo da força oscilante
     w = 2.0   #constante de oscilação da força oscilante
-    F = -p*np.sin(w*t) #força oscilante
+    F = -p*np.cos(w*t) #força oscilante
     dx1dt = v1
     dx2dt = v2
     dv1dt = -(k1 * x1 - k2 * (x2 - x1)) / m1 - F/m1- b1 * v1 
